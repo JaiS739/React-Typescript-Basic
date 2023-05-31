@@ -12,3 +12,13 @@ Ans. npx-create-react-app <app-name> --template typescript
 
 ---------------------------------
 In Status.tsx file you can see that there are three messages "success" "error" "loading" but if in case if the prop value is not any of these like "asdasd" then if we give type string then it is not going to give any errors so to overcome this we can use type as "loading" | "success" | "error". So this will be checked only not other characters or string like "asdasd".
+
+
+
+
+==> Optional Props = If you dont want to pass any value to the component then you can use ? mark at the end of the key like :-
+    In app.tsx file line no 26 we are using Greeet component but not passing the count value so it will throw error to overcome this problem we can add a ? at the end of the key when defining the type in the Greet component.
+
+
+
+==> How to type event in typescript?

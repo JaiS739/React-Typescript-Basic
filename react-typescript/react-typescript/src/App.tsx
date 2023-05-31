@@ -5,6 +5,7 @@ import Greet from "./components/Greet";
 import { Person } from "./components/Person";
 import PersonList from "./components/PersonList";
 import {Status} from "./components/Status";
+import Button from "./components/Button";
 
 function App() {
   const personName = {
@@ -23,6 +24,10 @@ function App() {
       <Person name={personName} />
       <PersonList name={personList} /> */}
       <Status status= "loading"/>
+      <Greet name="Jai"  isLoggedIn={true} />
+      <Button handleClick = {(event, id)=>{
+        console.log("button clicked", event, id)
+      }}/>
     </div>
   );
 }
