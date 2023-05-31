@@ -1,0 +1,14 @@
+Q. Why typescript + react ?
+Ans. with static type checking you get to learn about potentials bugs as you are typing the code, than heading to the browser and figuring out at runtime.
+
+It provides way to describe the shape of an object hence providing better documentation and autocomplete.
+
+Makes maintencenace and refactoring of large code bases much easier.
+
+
+Q. How to start the app with typescript and react?
+Ans. npx-create-react-app <app-name> --template typescript
+
+
+---------------------------------
+In Status.tsx file you can see that there are three messages "success" "error" "loading" but if in case if the prop value is not any of these like "asdasd" then if we give type string then it is not going to give any errors so to overcome this we can use type as "loading" | "success" | "error". So this will be checked only not other characters or string like "asdasd".
