@@ -6,6 +6,8 @@ import { Person } from "./components/Person";
 import PersonList from "./components/PersonList";
 import {Status} from "./components/Status";
 import Button from "./components/Button";
+import Input from "./components/Input";
+import ComponentStyle from "./components/ComponentStyle";
 
 function App() {
   const personName = {
@@ -28,8 +30,12 @@ function App() {
       <Button handleClick = {(event, id)=>{
         console.log("button clicked", event, id)
       }}/>
+      <Input value="" handleChange={(event)=>
+      console.log(event)}/>
+      <ComponentStyle styles={{border:"1px solid red", maxWidth:"150px", margin:"auto", padding:"5px"}}/>
     </div>
   );
 }
 
 export default App;
+ 

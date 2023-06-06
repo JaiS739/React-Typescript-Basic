@@ -22,3 +22,8 @@ In Status.tsx file you can see that there are three messages "success" "error" "
 
 
 ==> How to type event in typescript?
+
+
+==> Destructuring the props just like we do with props in react.
+
+==> Creating a seperate file for Types and importing it to the component where it is needed.
