@@ -8,6 +8,8 @@ import {Status} from "./components/Status";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import ComponentStyle from "./components/ComponentStyle";
+import LoggedIn from "./components/state/LoggedIn";
+import User from "./components/state/User";
 
 function App() {
   const personName = {
@@ -30,9 +32,12 @@ function App() {
       <Button handleClick = {(event, id)=>{
         console.log("button clicked", event, id)
       }}/>
+      <Person name={personName} />
       <Input value="" handleChange={(event)=>
       console.log(event)}/>
       <ComponentStyle styles={{border:"1px solid red", maxWidth:"150px", margin:"auto", padding:"5px"}}/>
+      {/* <LoggedIn/> */}
+      <User/>
     </div>
   );
 }
