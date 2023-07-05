@@ -31,3 +31,11 @@ In Status.tsx file you can see that there are three messages "success" "error" "
 
 ==> LEARNING
     use of ? (ternary operator) to check if the object exits or not.
+
+
+===> github learnings
+    How to amend (to add something in the same commit if it is not went to the repo)
+    -> if you have added a commit and did not push the code to the repo
+        and you want to change something without any extra commit then
+        use -> git commit --amend
+    to check the difference use -> git diff --cached
