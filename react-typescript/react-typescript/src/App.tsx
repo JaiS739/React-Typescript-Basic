@@ -11,6 +11,9 @@ import ComponentStyle from "./components/ComponentStyle";
 import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
 import { Counter } from "./components/state/Counter";
+import { DomRef } from "./components/ref/DomRef";
+import { Private } from "./components/auth/Private";
+import { Profiles } from "./components/auth/Profiles";
 
 function App() {
   const personName = {
@@ -40,6 +43,8 @@ function App() {
       {/* <LoggedIn/> */}
       <User/>
       <Counter/>
+      <DomRef/>
+      <Private isLoggedIn={true} Component={Profiles}/>
     </div>
   );
 }
